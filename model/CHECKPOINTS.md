@@ -9,7 +9,11 @@ en `docs/TRAINING.md`. Por ejemplo, `checkpoint-40/trainer_state.json` registra
 entrega registró 4 pasos.
 
 El adaptador final está en `model/lora_adapter/` y fue reentrenado con SFT/DPO
-y desplegado como GGUF F16. Para reproducir la corrida centrada en formato:
+y desplegado como GGUF F16. Los archivos `model/adapter_config.json`,
+`model/adapter_model.safetensors` y `model/outputs/` corresponden a artefactos
+previos (r=8/alpha=16/q,v); no son el adaptador final.
+
+Para reproducir la corrida centrada en formato:
 
 ```bash
 source .venv/bin/activate
